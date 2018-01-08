@@ -1,9 +1,14 @@
-//register the bot. Syntax: registerBot(bot_username, bot_header_char, callback). callback is the name of the function to be called whenever a message starts with the command header.
+//You need to store your bot into a variable.
+var SM84CEbot = new Bot("SM84CEBot", "~");
 
-registerBot("SM84CEBot", "~", "execute_SM84CEBot");
+function initializeBots() {
+	//call the "register" function of your bot, which tells the bot API, "I'm here! Send me commands plz!"
+	SM84CEbot.register();
+}
 
-//this is the function called whenever a message starts with the command header. We recommend function names of the format execute<bot_username>
-function execute_SM84CEBot(data) {
+//This is the function called whenever a message starts with the command header.
+//set the 'executeCommand' function of your bot so that it, well, executes commands.
+SM84CEbot.executeCommand = function(data) {
   //This code initializes the variables:
   var poster = data.poster;
   var message = data.message;
@@ -12,6 +17,9 @@ function execute_SM84CEBot(data) {
 
   //if the first 4 characters of the message, minus the command header, are "ping", then highlight the user and say, "Pong!".
   if (message.substring(9) == "BotAttack") {
-  	respond(username + ": This is an attack of the Universal Paperclips drones.  You'd better run!!","SM84CEBot",data);
+  	//this is a built-in function of your bot.
+  	respond(username + ": This is an attack of the Universal Paperclips drones.  You'd better run!!");
   }
 }
+
+//You are welcome :P
