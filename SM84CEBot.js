@@ -21,4 +21,8 @@ SM84CEbot.executeCommand = function(data) {
   	//this is a built-in function of your bot.
   	SM84CEbot.respond(poster + ": This is an attack of the Universal Paperclips drones.  You'd better run!!");
   }
+  //the message is made lowercase
+  if (message.substring(0,6) == "sm84ce") {
+    SM84CEbot.respond("SM84CE: ping!")
+  }
 }
