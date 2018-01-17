@@ -21,4 +21,20 @@ SM84CEbot.executeCommand = function(data) {
   	//this is a built-in function of your bot.
   	SM84CEbot.respond(poster + ": This is an attack of the Universal Paperclips drones.  You'd better run!!");
   }
+if (message.substring(0,2) == "xd") {
+  	//this is a built-in function of your bot.
+  	SM84CEbot.respond(poster + ": DoorsCS told me to tell you that xd is not an actual face.  Stop it.");
+  }
+if (message.substring(0,6) == "cookie") {
+  	//this is a built-in function of your bot.
+  	SM84CEbot.respond(poster + ": UniChatDevTeam, someone wanted you to have this cookie!");
+  }
+  if (message.substring(0,21) == "releasethehypnodrones") {
+  	//this is a built-in function of your bot.
+  	SM84CEbot.respond(poster + ": Releasing the HypnoDrones...");
+  }
+if (message.substring(0,21) == "releasethehypnodrones") {
+  	//this is a built-in function of your bot.
+  	SM84CEbot.respond(poster + ": The HypnoDrones have been released!  _iPhoenix_, are you ready to be turned into paperclips?");
+  }
 }
