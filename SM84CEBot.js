@@ -37,4 +37,12 @@ if (message.substring(0,21) == "releasethehypnodrones") {
   	//this is a built-in function of your bot.
   	SM84CEbot.respond(poster + ": The HypnoDrones have been released!  _iPhoenix_, are you ready to be turned into paperclips?");
   }
+	if (message.substring(0,12) == "installcycle") {
+  	//this is a built-in function of your bot.
+  	SM84CEbot.respond(poster + ": Have you tried uninstalling and reinstalling?");
+  }
+	if (message.substring(0,10) == "powercycle") {
+  	//this is a built-in function of your bot.
+  	SM84CEbot.respond(poster + ": DoorsCS told me to ask you if you've tried turning it off and back on again.  He also wants you to look at this: https://youtu.be/nn2FB1P_Mn8");
+  }
 }
