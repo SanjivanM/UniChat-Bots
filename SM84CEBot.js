@@ -45,4 +45,7 @@ if (message.substring(0,21) == "releasethehypnodrones") {
   	//this is a built-in function of your bot.
   	SM84CEbot.respond(poster + ": DoorsCS told me to ask you if you've tried turning it off and back on again.  He also wants you to look at this: https://youtu.be/nn2FB1P_Mn8");
   }
+	if (message.substring(0,6) == "sm84ce") {
+        SM84CEbot.respond("SM84CE: ping!")
+  }
 }
