@@ -1,2 +1,4 @@
 ban
 banhammer
+|o|
+>o<
