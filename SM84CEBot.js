@@ -23,7 +23,7 @@ SM84CEbot.executeCommand = function (data) {
     SM84CEbot.respond(poster + ": DoorsCS told me to tell you that xd is not an actual face.  Stop it.");
   }
   if (message.substring(0, 6) == "cookie") {
-    SM84CEbot.respond(poster + ": _iPhoenix_, LAX18, others: someone wanted you to have this cookie!");
+    SM84CEbot.respond("_iPhoenix_, LAX18, others: someone wanted you to have this cookie!");
   }
   if (message.substring(0, 21) == "releasethehypnodrones") {
     SM84CEbot.respond(poster + ": Releasing the HypnoDrones...");
@@ -47,15 +47,13 @@ SM84CEbot.executeCommand = function (data) {
     SM84CEbot.respond("Don't make _iPhoenix_ ban you...")
   }
   if (message.substring(0,9) == "botattack") {
-    SM84CEbot.respond(poster + ": This is an attack of the UniChat Bots.  RUUUN!!")
+    SM84CEbot.respond(poster + ": This is an attack of the UniChat Bots.  RUUUN!!");
   }
   if (message.substring(0,9) == "banhammer") {
-    SM84CEbot.respond("------[#] :( ")
-  }
-  if (message.substring(0,9) == "banhammer") {
-    SM84CEbot.respond("uh oh... Someone's going to have a BAD day...")
+    SM84CEbot.respond("------[#] :( ");
+    SM84CEbot.respond("uh oh... Someone's going to have a BAD day...");
   }
   if (message.substring(0,5) == "order") {
-    SM84CEbot.respond("ORDER! ORDER in the chatroom!! *_iPhoenix_ bangs his banhammer")
+    SM84CEbot.respond("ORDER! ORDER in the chatroom!! *"+poster+" bangs his banhammer");
   }
 }
