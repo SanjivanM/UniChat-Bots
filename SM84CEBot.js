@@ -16,7 +16,7 @@ SM84CEbot.executeCommand = function (data) {
   var timestamp = data.timestamp;
   var raw_timestamp = data.rawTimestamp;
 
-  if (message.substring(0, 9) == "botattack") {
+  if (message.substring(0, 11) == "droneattack") {
     SM84CEbot.respond(poster + ": This is an attack of the Universal Paperclips drones.  You'd better run!!");
   }
   if (message.substring(0, 2) == "xd") {
