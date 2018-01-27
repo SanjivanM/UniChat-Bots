@@ -54,6 +54,6 @@ SM84CEbot.executeCommand = function (data) {
     SM84CEbot.respond("uh oh... Someone's going to have a BAD day...");
   }
   if (message.substring(0,5) == "order") {
-    SM84CEbot.respond("ORDER! ORDER in the chatroom!! *"+poster+" bangs his banhammer");
+    SM84CEbot.respond("ORDER! ORDER in the chatroom!! *"+poster+" bangs "+((poster == "SM84CE" || poster=="_iPhoenix_") ? "his " : "his/her ")+((poster == "_iPhoenix_")?"ban":"")+"hammer");
   }
 }
