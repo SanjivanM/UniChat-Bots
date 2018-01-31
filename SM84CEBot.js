@@ -16,28 +16,28 @@ SM84CEbot.executeCommand = function (data) {
   var timestamp = data.timestamp;
   var raw_timestamp = data.rawTimestamp;
 
-  if (message.substring(0, 11) == "droneattack") {
+  if (message.startsWith("droneattack")) {
     SM84CEbot.respond(poster + ": This is an attack of the Universal Paperclips drones.  You'd better run!!");
   }
-  if (message.substring(0, 2) == "xd") {
+  if (message.startsWith("xd")) {
     SM84CEbot.respond(poster + ": DoorsCS told me to tell you that xd is not an actual face.  Stop it.");
   }
-  if (message.substring(0, 6) == "cookie") {
+  if (message.startsWith("cookie")) {
     SM84CEbot.respond("_iPhoenix_, LAX18, others: someone wanted you to have this cookie!");
   }
-  if (message.substring(0, 21) == "releasethehypnodrones") {
+  if (message.startsWith("releasethehypnodrones")) {
     SM84CEbot.respond(poster + ": Releasing the HypnoDrones...");
     setTimeout(function () {
       SM84CEbot.respond(poster + ": The HypnoDrones have been released!  _iPhoenix_, are you ready to be turned into paperclips?");
     }, 1000);
   }
-  if (message.substring(0, 12) == "installcycle") {
+  if (message.startsWith("installcycle")) {
     SM84CEbot.respond(poster + ": Have you tried uninstalling and reinstalling?");
   }
-  if (message.substring(0, 10) == "powercycle") {
+  if (message.startsWith("powercycle")) {
     SM84CEbot.respond(poster + ": DoorsCS told me to ask you if you've tried turning it off and back on again.  He also wants you to look at this: https://youtu.be/nn2FB1P_Mn8");
   }
-  if (message.substring(0, 6) == "sm84ce") {
+  if (message.startsWith("sm84ce")) {
     SM84CEbot.respond("SM84CE: ping!");
   }
   if (message.substring(0, 4) == "ping") {
