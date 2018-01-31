@@ -1,3 +1,7 @@
-|o| -- pew pew
+---------------StarWarsBot----------------
 
-">o<" -- POW POW! / FOR THE REBELLION!!!
+header: "^"
+
+ |o| -- pew pew
+
+ >o< -- POW POW! / FOR THE REBELLION!!!
